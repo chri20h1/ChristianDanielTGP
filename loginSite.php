@@ -13,7 +13,7 @@
   <div class="loginBoks">
     <h1>Login her</h1>
     <form action="inkludere/login.ink.php" method="post">
-      <input type="email" name="mailuid" class="input-box" placeholder="Din Email/Username" id="txtemail">
+      <input type="email" name="mailuid" class="input-box" placeholder="Din Email" id="txtemail">
       <input type="password" name="pwd" class="input-box" placeholder="Dit Password" id="txtpass">
       <p><span><input type="checkbox" id="check"></span> Jeg acceptere betingelsesvilkårene</p>
       <button type="submit" class="login-submit" name="login-submit">Login</button>
