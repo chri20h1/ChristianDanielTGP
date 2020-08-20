@@ -34,7 +34,7 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: #eee;
+  color: red;
 }
 
 .logoutHeaderKnap, .loginHeaderKnap, .signupHeaderKnap {
