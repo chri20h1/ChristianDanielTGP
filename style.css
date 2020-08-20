@@ -33,7 +33,11 @@ ul li a {
   padding: 0 30px;
 }
 
-.logoutHeaderKnap, .loginHeaderKnap {
+ul li a:hover {
+  background-color: #eee;
+}
+
+.logoutHeaderKnap, .loginHeaderKnap, .signupHeaderKnap {
   float: right;
   background-color: #008CBA;
   color: white;
