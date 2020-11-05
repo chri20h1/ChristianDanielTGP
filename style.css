@@ -37,7 +37,9 @@ ul li a:hover {
   color: red;
 }
 
-.logoutHeaderKnap, .loginHeaderKnap, .signupHeaderKnap {
+/* .logoutHeaderKnap, .loginHeaderKnap, .signupHeaderKnap, .profilHeaderKnap, { */
+
+.headerKnap {
   float: right;
   background-color: #008CBA;
   color: white;
@@ -51,6 +53,8 @@ ul li a:hover {
   margin-top: 10px;
 
 }
+
+
 
 .spilNav {
   padding-left: 50px;
@@ -109,6 +113,19 @@ ul li a:hover {
 }
 
 .signup-submit{
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color:#1c8abd;
+}
+
+.profil-submit {
   color: #fff;
   width: 100%;
   padding: 10px;

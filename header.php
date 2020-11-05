@@ -21,7 +21,10 @@
         if (isset($_SESSION['userId'])) {
           echo '<a class="logout" href="inkludere/logout.ink.php">
             <button type="submit" class="logoutHeaderKnap" name="logout-submit" action="inkludere/logout.ink.php">Logout</button>
-            </a>';
+            </a>
+            <a class="profil" href="profil.php">
+              <button type="button" class="logoutHeaderKnap" name="profil-submit">Min profil</button>
+              </a>';
         }
         else {
           echo '<a class="login" href="loginSite.php">
