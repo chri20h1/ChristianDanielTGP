@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="style.css">
 <?php
   require "header.php";
 ?>
@@ -5,7 +6,7 @@
    <main>
      <div class="wrapper-main">
        <section class="section-default">
-    <p>HEJ </p>
+    <p>TEST </p>
        </section>
       </div>
      </main>

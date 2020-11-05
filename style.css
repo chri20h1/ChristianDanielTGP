@@ -39,7 +39,7 @@ ul li a:hover {
 
 /* .logoutHeaderKnap, .loginHeaderKnap, .signupHeaderKnap, .profilHeaderKnap, { */
 
-.headerKnap {
+.headerKnap, .logoutHeaderKnap, .loginHeaderKnap, .signupHeaderKnap, .profilHeaderKnap, {
   float: right;
   background-color: #008CBA;
   color: white;
