@@ -20,15 +20,15 @@
        <?php
         if (isset($_SESSION['userId'])) {
           echo '<a class="logout" href="inkludere/logout.ink.php">
-            <button type="submit" class="logoutHeaderKnap" name="logout-submit" action="inkludere/logout.ink.php">Logout</button>
+            <button type="submit" class="HeaderKnap" name="logout-submit" action="inkludere/logout.ink.php">Logout</button>
             </a>
             <a class="profil" href="profil.php">
-              <button type="button" class="logoutHeaderKnap" name="profil-submit">Min profil</button>
+              <button type="button" class="HeaderKnap" name="profil-submit">Min profil</button>
               </a>';
         }
         else {
           echo '<a class="login" href="loginSite.php">
-              <button type="button" class="loginHeaderKnap" name="login-submit" action="loginSite.php">Login</button>
+              <button type="button" class="HeaderKnap" name="login-submit" action="loginSite.php">Login</button>
             </a>';
 
         }
