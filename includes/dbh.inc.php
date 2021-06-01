@@ -3,7 +3,7 @@
 $servername = "localhost";
 $dBUsername = "root";
 $dBPassword = "";
-$dBName = "socialbeachdatabase";
+$dBName = "tietgengpdb";
 
 $conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
 
