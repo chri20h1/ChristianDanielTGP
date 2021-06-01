@@ -4,7 +4,7 @@
 
    <main>
      <div class="wrapper-main">
-    <img class="forside" src="img/forsidePic.png" alt="logo" width="100%" height="100%">
+    <img class="forside" src="img/tietPic.png" alt="logo" width="100%" height="100%">
        </section>
       </div>
      </main>
