@@ -16,10 +16,10 @@
     <nav>
       <div class="wrapper">
         <ul>
-           <a href="forside.php">
+           <a href="index.php">
            <li><img src="img/tietgenLogo.png" class="logo" alt="logo" width="75" height="75"><a/></li>
-           <li><a class="spilNav" href="index.php">Feed</a></li>
-           <li><a class="aftalerNav" href="aftaler.php">Aftaler</a></li>
+           <li><a class="gameNav" href="games.php">Games</a></li>
+           <li><a class="leaderboardNav" href="leaderboard.php">Leaderboard</a></li>
            <li><a class="chatNav" href="chat.php">Chat</a></li>
            <li><a class="skiteNav1" href="skitse.php">Temp site</a></li>
            <li><a class="skiteNav2" href="skitse2.php">Temp site</a></li>
