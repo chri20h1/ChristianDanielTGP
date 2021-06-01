@@ -75,8 +75,8 @@ function uidExists($conn, $username) {
 }
 
 // Indsæt ny user i databasen
-function createUser($conn, $name, $email, $username, $pwd) {
-  $sql = "INSERT INTO users (usersName, usersEmail, usersUid, usersPwd) VALUES (?, ?, ?, ?);";
+function createUser($conn, $name, $klasse, $email, $username, $pwd) {
+  $sql = "INSERT INTO users (usersName, usersKlasse, usersEmail, usersUid, usersPwd) VALUES (?, ?, ?, ?, ?);";
 
 	$stmt = mysqli_stmt_init($conn);
 	if (!mysqli_stmt_prepare($stmt, $sql)) {
@@ -86,7 +86,7 @@ function createUser($conn, $name, $email, $username, $pwd) {
 
 	$hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
 
-	mysqli_stmt_bind_param($stmt, "ssss", $name, $email, $username, $hashedPwd);
+	mysqli_stmt_bind_param($stmt, "sssss", $name, $klasse, $email, $username, $hashedPwd);
 	mysqli_stmt_execute($stmt);
 	mysqli_stmt_close($stmt);
 	mysqli_close($conn);

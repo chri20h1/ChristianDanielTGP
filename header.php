@@ -7,7 +7,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Social Beach</title>
+    <title>Tietgen GP</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -17,7 +17,7 @@
       <div class="wrapper">
         <ul>
            <a href="forside.php">
-           <li><img src="img/sbLogo.png" class="logo" alt="logo" width="103" height="75"><a/></li>
+           <li><img src="img/tietgenLogo.png" class="logo" alt="logo" width="75" height="75"><a/></li>
            <li><a class="spilNav" href="index.php">Feed</a></li>
            <li><a class="aftalerNav" href="aftaler.php">Aftaler</a></li>
            <li><a class="chatNav" href="chat.php">Chat</a></li>

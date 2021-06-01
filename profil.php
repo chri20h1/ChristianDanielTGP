@@ -21,7 +21,7 @@
 
       if ($resultCheck > 0) {
          while ($row = mysqli_fetch_assoc($result)){
-           echo "<span class='profilInfo'>" . "Navn:.......... " . "<div class='profilInfoFed'>" . "{$row['usersName']}" . "</div><br>" . "Username:... " . "<div class='profilInfoFed'>" . "{$row['usersUid']}" . "</div><br>" . "Email............. " . "<div class='profilInfoFed'>" . "{$row['usersEmail']}" . "</div><br>" . "Users ID:........ " . "<div class='profilInfoFed'>" . "{$row['usersId']}" . "</div><br></span>";
+           echo "<span class='profilInfo'>" . "Navn:.......... " . "<div class='profilInfoFed'>" . "{$row['usersName']}" . "</div><br>" . "Klasse:........ " . "<div class='profilInfoFed'>" . "{$row['usersKlasse']}" . "</div><br>" . "Username:... " . "<div class='profilInfoFed'>" . "{$row['usersUid']}" . "</div><br>" . "Email............. " . "<div class='profilInfoFed'>" . "{$row['usersEmail']}" . "</div><br>" . "Users ID:........ " . "<div class='profilInfoFed'>" . "{$row['usersId']}" . "</div><br></span>";
          }
        }
 else {
