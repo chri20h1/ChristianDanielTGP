@@ -1,5 +1,5 @@
 <?php
-  include_once "header.php";
+  include_once 'header.php';
 ?>
 
    <main>
@@ -9,7 +9,6 @@
           if (isset($_SESSION['useruid'])) {
             echo '<p class="login-status">Du er logget på!!!!</p>';
          }
-
           else {
             echo '<p class="login-status">Du er ikke logget på!</p>';
           }

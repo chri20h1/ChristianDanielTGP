@@ -59,11 +59,12 @@
                 menu
               </button>
               <ul class="nav__wrapper">
-                <li class="nav__item"><a href="#">Hjem</a></li>
-                <li class="nav__item"><a href="#">Spil</a></li>
-                <li class="nav__item"><a href="#">Leaderboard</a></li>
-                <li class="nav__item"><a href="#">Chat</a></li>
-                <li class="nav__item"><a href="#">Om os</a></li>
+                <li class="nav__item"><a href="index.php">Hjem</a></li>
+                <li class="nav__item"><a href="games.php">Spil</a></li>
+                <li class="nav__item"><a href="leaderboard.php">Leaderboard</a></li>
+                <li class="nav__item"><a href="chat.php">Chat</a></li>
+                <li class="nav__item"><a href="about.php">Om os</a></li>
+                <li class="nav__item"><a href="skitse.php">Temp site</a></li>
               </ul>
             </nav>
           </div>
@@ -74,7 +75,7 @@
 
             if (isset($_SESSION['useruid'])) {
 
-              echo '<a href="#"><?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+              echo '<a href="support.php"><?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128 128"><defs><style>.cls-1{fill:#2d3e50;}</style></defs><title>Brug for hjælp?</title><path class="cls-1"
               d="M70.574,4.21473A54.3192,54.3192,0,0,0,17.01528,49.91849C16.57421,52.698,3.19661,123.78527,3.19661,
               123.78527L42.985,105.13883A54.23221,54.23221,0,1,0,70.574,4.21473ZM67.96373,28.0213a7.26583,7.26583,
@@ -124,7 +125,7 @@
             }
             else {
 
-              echo '<a href="#"><?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+              echo '<a href="support.php"><?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128 128"><defs><style>.cls-1{fill:#2d3e50;}</style></defs><title>Brug for hjælp?</title><path class="cls-1"
               d="M70.574,4.21473A54.3192,54.3192,0,0,0,17.01528,49.91849C16.57421,52.698,3.19661,123.78527,3.19661,
               123.78527L42.985,105.13883A54.23221,54.23221,0,1,0,70.574,4.21473ZM67.96373,28.0213a7.26583,7.26583,
