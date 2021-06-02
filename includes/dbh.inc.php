@@ -5,7 +5,7 @@
 $servername = "localhost";
 $dBUsername = "root";
 $dBPassword = "";
-$dBName = "tietgengpdb";
+$dBName = "tgpdatabase";
 
 $conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
 
