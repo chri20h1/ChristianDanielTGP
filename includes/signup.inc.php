@@ -2,7 +2,7 @@
 
 if (isset($_POST["submit"])) {
 
-  // First we get the form data from the URL
+  // Få data fra "form" html
   $name = $_POST["name"];
   $klasse = $_POST["klasse"];
   $email = $_POST["email"];
@@ -10,42 +10,44 @@ if (isset($_POST["submit"])) {
   $pwd = $_POST["pwd"];
   $pwdRepeat = $_POST["pwdrepeat"];
 
-  // Then we run a bunch of error handlers to catch any user mistakes we can (you can add more than I did)
-  // These functions can be found in functions.inc.php
+  // Derefter kører vi en masse "error handlers", som fanger fejl brugeren har begået såsom brugt brugernavn eller tomme felter
+  // Funktionerne kan findes i functions.inc.php
 
   require_once "dbh.inc.php";
   require_once 'functions.inc.php';
 
-  // Left inputs empty
-  // We set the functions "!== false" since "=== true" has a risk of giving us the wrong outcome
+
+  // Vi har sat funktionerne til "!== false" da "=== true" har en risiko for, at give os et forkert resultat
+
+  // Hvis der er tomme felter --> exit
   if (emptyInputSignup($name, $klasse, $email, $username, $pwd, $pwdRepeat) !== false) {
     header("location: ../signup.php?error=emptyinput");
 		exit();
   }
-	// Proper username chosen
+	// Hvis det ikke er et ordenligt username --> exit
   if (invalidUid($uid) !== false) {
     header("location: ../signup.php?error=invaliduid");
 		exit();
   }
-  // Proper email chosen
+  // Hvis det ikke er en ordenlig email --> exit
   if (invalidEmail($email) !== false) {
     header("location: ../signup.php?error=invalidemail");
 		exit();
   }
-  // Do the two passwords match?
+  // Hvis pwd ikke matcher --> exit
   if (pwdMatch($pwd, $pwdRepeat) !== false) {
     header("location: ../signup.php?error=passwordsdontmatch");
 		exit();
   }
-  // Is the username taken already
+  // Hvis usernamed er taget --> exit
   if (uidExists($conn, $username) !== false) {
     header("location: ../signup.php?error=usernametaken");
 		exit();
   }
 
-  // If we get to here, it means there are no user errors
+  // Hvis vi når hertil betyder det, at der er ingen fejl begået af brugeren ved signup
 
-  // Now we insert the user into the database
+  // Nu indsætter vi brugeren i databasen "users"
   createUser($conn, $name, $klasse, $email, $username, $pwd);
 
 } else {

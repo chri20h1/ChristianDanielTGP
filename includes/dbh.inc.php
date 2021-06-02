@@ -1,5 +1,7 @@
 <?php
 
+// dbh.inc.php connecter databasen med siden
+
 $servername = "localhost";
 $dBUsername = "root";
 $dBPassword = "";
