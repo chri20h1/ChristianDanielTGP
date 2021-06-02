@@ -10,7 +10,5 @@ navToggle.addEventListener("click", function () {
     navWrapper.classList.add("active");
     this.setAttribute("aria-label", "close menu");
     this.setAttribute("aria-expanded", "true");
-    searchForm.classList.remove("active");
-    searchToggle.classList.remove("active");
   }
 });

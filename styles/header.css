@@ -20,7 +20,9 @@
   background-color: #c7f2ff; }
   @media (max-width: 939px) {
     .site-header__bottom .site-header__end {
-      order: -1; } }
+      order: -1;
+      } }
+
 .site-header__wrapper {
   display: flex;
   justify-content: space-between; }
@@ -46,12 +48,12 @@
     margin-right: 1.5rem; } }
 
 @media (max-width: 939px) {
-  .site-header__end.bottom .cart {
+  .site-header__end.bottom .support {
     margin-right: 1.5rem; } }
 
 @media (max-width: 939px) {
-  .site-header__end.bottom .search {
-    margin-left: 0; } }
+  .site-header__end.bottom .settings {
+    margin-right: 1.5rem; } }
 
 .site-header__end.bottom svg {
   width: 22px;
