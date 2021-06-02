@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/reset.min.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/header.css" />
+    <link rel="icon" type="image/png" href="img/tietgenLogo.png" />
   </head>
   <body>
     <!-- Header Start -->
