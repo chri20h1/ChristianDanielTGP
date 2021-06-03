@@ -38,6 +38,8 @@ border-width: 3px;
 border-spacing: 20px;
 border-radius: 25px;
 padding: 12px;
+font-size: 23px;
+font-family: sans-serif;
 }
 
 .game {
