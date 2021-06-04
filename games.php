@@ -7,7 +7,9 @@
        <section class="section-default">
          <?php if (isset($_SESSION['useruid'])) : ?>
 
-            <p class="login-status">Du er logget på!!!!</p>
+            <form method="get" action="/snake.php">
+                <button type="submit" class="button1">Spil snake</button>
+            </form>
 
           <?php else : ?>
 
